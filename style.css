@@ -1,0 +1,442 @@
+/*
+--------TYPOGRAPHY---------
+font-size
+60px / 48px / 32px / 24px / 20px / 16px / 12px
+
+font-family
+system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"
+
+--------COLOR----------
+
+Ghost Button Text: #E5E7EB (same as main text) 
+
+Card Border: rgba(255, 255, 255, 0.08) (subtle light border on dark) 
+
+Gradient (Hero Background): mix of 
+
+• #3A86FF (blue) 
+
+• #8338EC (purple)
+with transparency 
+
+#0F0F14 (Background) 
+
+#16161D (Card) 
+
+#3A86FF (Primary Blue) 
+
+#8338EC (Accent Purple) 
+
+#E5E7EB (Light Gray Text) 
+
+#A1A1AA (Muted Gray Text)
+
+
+*/
+
+html{
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  line-height:1.2;
+  font-weight: 400;
+  color: #495057;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container{
+  max-width: 1200px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-------- HEADER ---------*/
+
+
+.header-logo{
+  width: 90px;
+  height: 90px;
+}
+
+nav{
+  background-color: white;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.navbar-menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+nav .navbar-list{
+  height: 50px;
+}
+
+.menu-button{
+  display: none;
+}
+
+nav .navbar-link{
+  font-size: 3rem;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav .sidebar-link{
+  color: white;
+  font-size: 3rem;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar-link:hover{
+  color: lightgray;
+}
+
+.sidebar-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar-menu .navbar-list{
+  width: 100%;
+}
+
+p{
+  font-size: 3.2rem;
+}
+
+.home{
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home-heading{
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.home-paragraph{
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.home-button{
+  display: flex;
+  gap: 2rem;
+}
+
+.btn{
+  font-size: 3.2rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 2.5rem 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+ }
+ 
+ .btn-primary{
+   background-color: #3B82F6;
+   color: white;
+   border: 0.2rem solid #3B82F6;
+ }
+ 
+ .btn-primary:link, .btn-primary:active{
+   background-color: ;
+   color: ;
+ }
+ 
+ .btn-primary:hover, .btn-primary:active{
+  background-color: #3A86FF;
+  color: white;
+}
+
+.btn-white{
+  background-color: white;
+  color: #3B82F6;
+  border: 0.2rem solid #3B82F6;
+}
+
+.btn-white:link, .btn-white:active{
+   background-color: ;
+   color: ;
+ }
+
+.btn-white:hover, .btn-white:active{
+  background-color: #3A86FF;
+  color: white;
+}
+
+/*--------- SERVICES -------- */
+
+.services-section{
+  margin-bottom: 7rem;
+}
+
+.main-card-heading{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.services-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.5rem;
+  column-gap: 4.5rem;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.card{
+  padding: 2rem;
+  border: 5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.first-card{
+  background-color: #16161D;
+  color: #E5E7EB;
+}
+
+.second-card{
+  background-color: #3A86FF;
+  color: #E5E7EB;
+}
+
+.third-card{
+  background-color: #8338EC;
+  color: #E5E7EB
+}
+
+.fourth-card{
+  background-color: #A1A1AA;
+  color: black;
+}
+
+.card-heading{
+  color: #E5E7EB;
+}
+
+
+
+/*-------- ABOUT ----------*/
+
+.about-main-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 20rem;
+  margin-top: 20rem;
+}
+
+.about-content{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  
+}
+
+.about-heading{
+  font-size: 5.2rem;
+}
+
+.about{
+  text-align: center;
+}
+
+.mySkill-logo{
+  width: calc(100% / 3 - 10px)
+}
+
+/*-------- PROJECT --------- */
+
+.projects-section{
+  margin-bottom: 30rem;
+}
+
+.project-heading{
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 20rem;
+}
+
+.my-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image{
+  width: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.project-title{
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.project-content{
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title-content{}
+
+h1,h2,h3{
+  color: #212529;
+  letter-spacing: -0.2rem;
+}
+
+h1{
+  font-size: 6rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3.2rem;
+  
+}
+
+h4{
+  color: #212529;
+  font-size: 2.4rem;
+}
+
+
+h5{
+  color: #212529;
+  font-size: 2.0rem;
+}
+
+ul{
+  list-style: none;
+ }
+ 
+a{
+   text-decoration: none;
+   font-size: 1.6rem;
+   display: inline-block;
+   color: black;
+ }
+
+/*-------- FOOTER ----------*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home-link, .about-link, .project-link, .contact-link{
+  color: #3A86FF;
+  font-size: 2.4rem;
+}
+
+.important-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-headings{
+  text-align: center;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.social-logo-box{
+  display: flex;
+  flex-direction: row
+  justify-content: center;;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.social-logo{
+  width: 5rem;
+}
+
+.footer-info{
+  font-size: 2rem;
+}
+
+.footer-info-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixed-icon{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.chat-icon{
+  width: 50px;
+  
+}

@@ -1,0 +1,113 @@
+/* XXL 12 NETBOOk 1024px  */
+@media (max-width: 65rem){
+  html{
+    /* 9 * 100 / 16 = 56.25 */
+    font-size: 56.25%;
+  }
+}
+
+/* XL SAMSUNG GALAXY TAB 10 930PX */
+@media (max-width: 58rem){
+  html{
+    /* 8 * 100 / 16 = 50.75 */
+    font-size: 50%;
+  }
+}
+
+/*L NEXUS 7 2013 822px */
+@media (max-width: 51.375rem){
+  html{
+    /* 7 * 100 / 16 = 43.75 */
+    font-size: 43.75%;
+  }
+  
+  .hide-on-mobile{
+    display: none;
+  }
+  
+  .menu-button{
+    display: block;
+  }
+}
+
+/*MD NEXUS 7 2013 700px */
+@media (max-width: 43.75rem){
+  html{
+    /* 6 * 100 / 16 = 43.75 */
+    font-size: 37.5%;
+  }
+  
+  .sidebar-menu{
+    width: 60%;
+  }
+  
+  .form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: auto;
+ }
+ 
+ .section-image{
+   width: 80%;
+ }
+ 
+ .submit-button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color:  #3A86FF;
+  color: white;
+  font-size: 3.2rem;
+  padding: 2rem 5rem;
+  border: none;
+  border-radius: 3rem;
+}
+
+/* SM SAMSUNG GALAXY NOTE 5 562PX */
+@media (max-width: 35.125rem){
+  html{
+    /* 5 * 100 / 16 =  31.25*/
+    font-size: 31.25%;
+  }
+  
+  .home-heading{
+    font-size: 9.6rem;
+  }
+  
+  
+  .services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .services-card{
+    display: grid;
+    grid-template-columns: 350px;
+    justify-items: center;
+    align-items: center;
+   }
+   
+   .card{
+     padding: 4rem;
+   }
+  }
+  
+  /*MD NEXUS 7 2013 360px */
+@media (max-width: 22.5rem){
+  html{
+    /* 6 * 100 / 16 = 43.75 */
+    font-size: 25%;
+  }
+  
+  .services-card{
+    display: grid;
+    grid-template-columns: 280px;
+    justify-items: center;
+    align-items: center;
+   }
+}

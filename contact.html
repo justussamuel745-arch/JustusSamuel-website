@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Contact-style.css">
+  <link rel="stylesheet" href="query.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+    <nav class="nav-bar">
+      <a href="Home.html"><img src="Jey-icon.png" width="75px"></a>
+      <ul>
+        <li><a href="Home.html" class="btn btn-primary">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="form-section">
+      <img src="contact-image.jpg" class="section-image">
+      <div>
+        <h1 class="contact-heading">Get in touch</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+          <input type="hidden" name="access_key" value="8c36e8c3-098d-4049-a8e6-675337a5c1c3">
+          <input id="name" type="text" name="User-name" placeholder="Your Name"class="user-name" required>
+          <br>
+          <input id="email"type="email" name="User-Email" placeholder="Enter your Email" class="user-email" required>
+          <br>
+          <textarea id="Message" name="message" rows="5" cols="23" placeholder="Your Message"class="message" required></textarea>
+          <br>
+          <button type="submit" class="submit-button">Submit <img src="images/right-arrow-icon.png"width="20px"></button>
+        </form>
+      </div>
+    </section>
+  </main>
+  </div>
+  
+   
+    
+</body>
+</html>
