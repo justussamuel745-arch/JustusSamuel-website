@@ -1,0 +1,66 @@
+html{
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial;
+}
+
+.container{
+  max-width: 1200px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 5.2rem;
+  margin-top: 1rem;
+}
+
+.input-container{
+  margin-top: 5rem;
+  height: 7rem;
+  display: grid;
+  grid-template-columns: 23rem 17rem 17rem 15rem ;
+  gap: 2rem;
+}
+
+.input-container > input{
+  width: 100%;
+}
+
+.input-container > button{
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+.todo{
+  margin-top: 3rem;
+  height: 7rem;
+  display: grid;
+  grid-template-columns: 23rem 17rem 17rem 15rem ;
+  gap: 2rem;
+}
+
+.todo > button{
+  background-color: red;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+
+.todo > p{
+  font-size: 2.8rem;
+}

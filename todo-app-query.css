@@ -1,0 +1,58 @@
+/* XL 730px */
+@media (max-width: 46rem){
+  html{
+      /* 9 / 10 * 100 = 56.25rem */
+    font-size: 56.25%;
+  }
+  
+  .todo{
+    grid-template-columns: 22rem 16rem 16rem 14rem;
+  }
+  
+  .input-container{
+    grid-template-columns: 22rem 16rem 16rem 14rem;
+  }
+  
+}
+
+/* LG 678px */
+@media (max-width: 42.375rem){
+  html{
+    /* 8 / 16 * 100 = 50 */
+    font-size: 50%;
+  }
+}
+
+/* MD 598px */
+@media (max-width: 37.5rem){
+  html{
+    /* 7 / 16 * 100 = 44.75*/
+    font-size: 44.75%;
+  }
+}
+
+/* sm 540px */
+@media (max-width: 33.75rem){
+  html{
+    /* 6 / 16 * 100 = 44.75*/
+    font-size: 37.5%;
+  }
+  
+  
+}
+
+/* x-sm 442px */
+@media (max-width: 27.625rem){
+  html{
+    /* 5 / 16 * 100 = 44.75*/
+    font-size: 31.25%;
+  }
+}
+
+/* xx-sm 376x */
+@media (max-width: 23.5rem){
+  html{
+    /* 4 / 16 * 100 = 44.75*/
+    font-size: 25%;
+  }
+}
