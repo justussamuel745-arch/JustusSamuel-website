@@ -204,12 +204,20 @@
       hideSidebar.style.display = 'none'
     }
 
+
+    let currentColor = JSON.parse(localStorage.getItem('color'))
+
     
+    document.querySelector('.js-side-bar').style.backgroundColor = currentColor
     
     document.querySelector('.js-change-side-color').addEventListener('input', () => {
-       let colorPickerValue = document.querySelector('.js-change-side-color')
+       let colorPicker = document.querySelector('.js-change-side-color')
+       let colorPickerValue = colorPicker.value
        
-       document.querySelector('.js-side-bar').style.backgroundColor = colorPickerValue.value
+       localStorage.setItem('color', JSON.stringify(colorPickerValue))
+       
+       document.querySelector('.js-side-bar').style.backgroundColor = colorPickerValue
+       
     })
 
     
