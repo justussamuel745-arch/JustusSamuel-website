@@ -11,17 +11,25 @@
 <body>
   <div class="container">
     
-      <!-- Header -->
+      <!-- header -->
     <header>
       <nav id="Home">
         <a href="#Home"><img src="Jey-icon.png" class="header-logo"></a>
-        <ul class="sidebar-menu">
-          <li onclick="hideSidebar()" class="navbar-list"><a href="#" class="navbar-link"><img src="Sidebar-icon.png" width="30px"></a></li>
+        <ul class="sidebar-menu side-bar">
+          <li onclick="hideSidebar()" class="navbar-list"><a href="#" class="navbar-link"><img src="sidebar-icon.png" width="30px"></a></li>
           <li class="navbar-list"><a href="#" class="sidebar-link">Home</a></li> 
           <li class="navbar-list"><a onclick="hideSidebar()" href="#about" class="sidebar-link">About</a></li> 
           <li class="navbar-list"><a onclick="hideSidebar()" href="#my-service" class="sidebar-link">Services</a></li>
           <li class="navbar-list"><a onclick="hideSidebar()" href="#my-project" class="sidebar-link">Project</a></li>
           <li class="navbar-list"><a href="contact.html" class="sidebar-link">contact</a></li>
+          <li>
+            <select onclick="changeColor()" class="change-side-color color-list">
+              <option>black</option>
+              <option>silver</option>
+              <option>gold</option>
+              <option>purple</option>
+            </select>
+          </li>
         </ul>
         
         <ul class="navbar-menu">
@@ -98,6 +106,7 @@
             <!-- Projects-->
       <section id="my-project" class="projects-section">
          <h1 class="project-heading">My projects</h1>
+         <!-- ROCK PAPER SCISSOR PROJECT-->
          <div class="my-project">
            <div>
              <img src="rock-paper-scissor-icon.jpg" class="project-image">
@@ -106,9 +115,41 @@
              <h2><a href="10-Rock-paper-scissors(1).html" class="project-title">🎮 Rock, Paper, Scissors <br>Game</a></h2>
              <p>A fun and interactive implementation of the classic hand game, built using HTML, CSS, and JavaScript. This project demonstrates my skills in DOM manipulation, event handling, and responsive design while creating an engaging user experience.</p>
              <ul>
-               <li><a href="10-Rock-paper-scissors(2).html"class=" btn btn-white">Preview</a></li>
+               <li><a href="10-Rock-paper-scissors(1).html"class=" btn btn-white">Preview</a></li>
              </ul>
            </div>
+         </div>
+         <!-- TASKHUB PROJECT-->
+         <div class="task-hub-project">
+           <div>
+             <img src="TaskHub-project.jpg" class="todo-project-image">
+           </div>
+           <div class="task-hub-project-content">
+             <h2><a href="TaskHub.html">TaskHub</a></h2>
+             <p>A simple task management app that allows users to add, edit, and delete tasks. Built using JavaScript, HTML, and CSS.</p>
+             <div class="key-features">
+               <h3>key features</h3>
+               <ul>
+                 <li>Add and remove tasks</li>
+                 <li>Mark tasks as completed</li>
+               </ul>
+             </div>
+             <div class="technologies-used">
+               <h3>Technologies Used</h3>
+               <ul>
+                 <li><img src="6.png">
+                 <li><img src="10.png"></li>
+                 <li><img src="12.png"></li></li>
+               </ul>
+             </div>
+             <div class="task-hub-role">
+               <h3>My role</h3>
+               <p>Sole developer, responsible for designing and building the app.</p>
+             </div>
+           </div>
+           <ul>
+               <li><a href="TaskHub.html"class=" btn btn-white">Preview</a></li>
+             </ul>
          </div>
       </section>
     </main>
@@ -166,6 +207,13 @@
       hideSidebar.style.display = 'none'
     }
     
+    
+    function changeColor(){
+      let dropDown = document.querySelector('.change-side-color').value;
+      let colorPicker = document.querySelector('.side-bar').style.backgroundColor = `${dropDown}`
+    }
+    
+    
+    
   </script>
-</body>
-</html>
+</body> </html>
