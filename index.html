@@ -15,7 +15,7 @@
     <header>
       <nav id="Home">
         <a href="#Home"><img src="Jey-icon.png" class="header-logo"></a>
-        <ul class="sidebar-menu side-bar">
+        <ul class="sidebar-menu js-side-bar">
           <li onclick="hideSidebar()" class="navbar-list"><a href="#" class="navbar-link"><img src="sidebar-icon.png" width="30px"></a></li>
           <li class="navbar-list"><a href="#" class="sidebar-link">Home</a></li> 
           <li class="navbar-list"><a onclick="hideSidebar()" href="#about" class="sidebar-link">About</a></li> 
@@ -23,12 +23,7 @@
           <li class="navbar-list"><a onclick="hideSidebar()" href="#my-project" class="sidebar-link">Project</a></li>
           <li class="navbar-list"><a href="contact.html" class="sidebar-link">contact</a></li>
           <li>
-            <select onclick="changeColor()" class="change-side-color color-list">
-              <option>black</option>
-              <option>silver</option>
-              <option>gold</option>
-              <option>purple</option>
-            </select>
+            <input type="color" class="js-change-side-color color-list">
           </li>
         </ul>
         
@@ -201,17 +196,22 @@
       const sidebars = document.querySelector('.sidebar-menu');
       sidebars.style.display = 'flex'
     }
+
+    
     
     function hideSidebar(){
       const hideSidebar = document.querySelector('.sidebar-menu');
       hideSidebar.style.display = 'none'
     }
+
     
     
-    function changeColor(){
-      let dropDown = document.querySelector('.change-side-color').value;
-      let colorPicker = document.querySelector('.side-bar').style.backgroundColor = `${dropDown}`
-    }
+    document.querySelector('.js-change-side-color').addEventListener('input', () => {
+       let colorPickerValue = document.querySelector('.js-change-side-color')
+       
+       document.querySelector('.js-side-bar').style.backgroundColor = colorPickerValue.value
+    })
+
     
     
     
