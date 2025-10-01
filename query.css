@@ -12,6 +12,10 @@
     /* 8 * 100 / 16 = 50.75 */
     font-size: 50%;
   }
+  
+  .reduce-length{
+    display: none;
+  }
 }
 
 /*L NEXUS 7 2013 822px */
@@ -55,15 +59,27 @@
  }
  
  .submit-button{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color:  #3A86FF;
-  color: white;
-  font-size: 3.2rem;
-  padding: 2rem 5rem;
-  border: none;
-  border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color:  #3A86FF;
+    color: white;
+    font-size: 3.2rem;
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 3rem;
+  }
+  
+  .projects-section-container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-break{
+    display: block;
+  }
+  
 }
 
 /* SM SAMSUNG GALAXY NOTE 5 562PX */
@@ -95,6 +111,10 @@
    .card{
      padding: 4rem;
    }
+   
+   .reduce-length{
+    display: inline;
+  }
   }
   
   /*MD NEXUS 7 2013 360px */
