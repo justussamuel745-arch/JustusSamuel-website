@@ -2,7 +2,7 @@ let project = [
   {
     img: 'rock-paper-scissor-img-01.png',
     'project-title': '🎮 Rock, Paper, Scissors <br class="title-break"> Game',
-    'project-link':'10-Rock-paper-scissors(1).html',
+    'project-link':'10-Rock-paper-scissors(2).html',
     content: 'A fun and interactive implementation of the classic hand game, built using HTML, CSS, and JavaScript. This project demonstrates my skills in DOM manipulation, event handling, and responsive design while creating an engaging user experience.'
   },
   {
