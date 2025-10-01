@@ -11,12 +11,12 @@
 <body>
   <div class="container">
     
-      <!-- header -->
+      <!-- HEADER -->
     <header>
       <nav id="Home">
         <a href="#Home"><img src="Jey-icon.png" class="header-logo"></a>
         <ul class="sidebar-menu js-side-bar">
-          <li onclick="hideSidebar()" class="navbar-list"><a href="#" class="navbar-link"><img src="Sidebar-icon.png" width="30px"></a></li>
+          <li onclick="hideSidebar()" class="navbar-list"><a href="#" class="navbar-link"><img src="sidebar-icon.png" width="30px"></a></li>
           <li class="navbar-list"><a href="#" class="sidebar-link">Home</a></li> 
           <li class="navbar-list"><a onclick="hideSidebar()" href="#about" class="sidebar-link">About</a></li> 
           <li class="navbar-list"><a onclick="hideSidebar()" href="#my-service" class="sidebar-link">Services</a></li>
@@ -28,10 +28,15 @@
         </ul>
         
         <ul class="navbar-menu">
-          <li class="navbar-list hide-on-mobile"><a href="#Home" class="navbar-link">Home</a></li> 
-          <li class="navbar-list hide-on-mobile"><a href="#about" class="navbar-link">About</a></li> 
+          <li class="navbar-list hide-on-mobile"><a href="#Home" onclick="
+              btnHover(this)
+          " class="navbar-link btn-hover js-btn-hover">Home</a></li> 
+          <li class="navbar-list hide-on-mobile"><a href="#about" 
+            onclick="
+              btnHover(this)
+          "class="navbar-link js-btn-hover">About</a></li> 
           <li class="navbar-list hide-on-mobile"><a href="#my-service" class="navbar-link">Services</a></li>
-          <li class="navbar-list hide-on-mobile"><a href="my-project" class="navbar-link">Project</a></li>
+          <li class="navbar-list hide-on-mobile"><a href="#my-project" class="navbar-link">Project</a></li>
           <li class="navbar-list hide-on-mobile"><a href="contact.html" class="navbar-link">contact</a></li>
           <li onclick="showSidebar()" class="navbar-list menu-button"><a href="#" class="navbar-link"><img src="navbar-icon.png" width="30px"></a></li>
         </ul>
@@ -47,10 +52,7 @@
       </div>
     </header>
       
-     
-  
     <main>
-      
       <!-- SERVICES -->
       <section id="my-service" class="services-section">
        <h2 class="main-card-heading">SERVICES</h2>
@@ -58,27 +60,27 @@
            <div class="card first-card">
              <img src="Web-icon.png">
              <h3 class="card-heading">Responsive Web Design</h3>
-             <p class="card-content">I design websites that automatically adjust to any screen size, ensuring a seamless experience for users on desktops, tablets, and smartphones. By combining clean layouts, fluid grids, and flexible images, I create designs that look modern and professional on every device. This not only improves user engagement but also helps businesses reach a wider audience in today’s mobile-driven world.</p>
+             <p class="card-content">I design websites that automatically adjust to any screen size, ensuring a seamless experience for users on desktops, tablets, and smartphones. <span class="reduce-length">By combining clean layouts, fluid grids, and flexible images, I create designs that look modern and professional on every device. This not only improves user engagement but also helps businesses reach a wider audience in today’s mobile-driven world.</span></p>
          </div>
          <div class="card second-card">
            <img src="laptop-icon.png">
            <h3 class="card-heading">Front-End Development</h4>
-           <p class="card-content">Using the core building blocks of the web—HTML, CSS, and JavaScript—I develop interactive, fast, and user-friendly websites. My focus is on writing clean, structured code that is easy to maintain and performs well across different browsers. From smooth animations to functional navigation menus, I make sure every element of the website enhances the overall user experience.</p>
+           <p class="card-content">Using the core building blocks of the web—HTML, CSS, and JavaScript—I develop interactive, fast, and user-friendly websites. <span class="reduce-length">My focus is on writing clean, structured code that is easy to maintain and performs well across different browsers. From smooth animations to functional navigation menus, I make sure every element of the website enhances the overall user experience.</span></p>
          </div>
          <div class="card third-card">
            <img src="Internet-icon.png" width="40px" class="Internet-icon">
            <h3 class="card-heading">Custom Portfolio & Personal Websites</h3>
-           <p class="card-content">In today’s digital world, having a personal or professional online presence is essential. I specialize in creating tailored websites that highlight your unique identity, skills, or brand. Whether you are an individual looking to showcase your portfolio or a small business wanting to establish credibility online, I can build a site that is professional, simple to navigate, and uniquely yours.</p>
+           <p class="card-content">In today’s digital world, having a personal or professional online presence is essential. I specialize in creating tailored websites that highlight your unique identity, skills, or brand. <span class="reduce-length">Whether you are an individual looking to showcase your portfolio or a small business wanting to establish credibility online, I can build a site that is professional, simple to navigate, and uniquely yours.</span></p>
           </div>
          <div class="card fourth-card">
            <img src="UI-icon.png">
            <h3>UI/UX Improvements</h3>
-           <p>I help improve the overall look and feel of websites by enhancing layouts, colors, typography, and navigation to create a more user-friendly and engaging experience. My focus is on making websites intuitive, visually appealing, and easy to use across different devices.</p>
+           <p>I help improve the overall look and feel of websites by enhancing layouts, colors, typography, and navigation to create a more user-friendly and engaging experience.<span class="reduce-length">My focus is on making websites intuitive, visually appealing, and easy to use across different devices.</span></p>
          </div>
        </div>
       </section>
       
-          <!-- About me -->
+          <!-- ABOUT ME-->
       <section id="about" class="about-main-section">
         <div class="about-content">
            <h2 class="about-heading">About me</h2>
@@ -97,59 +99,16 @@
         </div>
       </section>
         
-        
-            <!-- Projects-->
+            <!-- PROJECT-->
       <section id="my-project" class="projects-section">
-         <h1 class="project-heading">My projects</h1>
-         <!-- ROCK PAPER SCISSOR PROJECT-->
-         <div class="my-project">
-           <div>
-             <img src="rock-paper-scissor-icon.jpg" class="project-image">
-           </div>
-           <div class="project-content">
-             <h2><a href="10-Rock-paper-scissors(2).html" class="project-title">🎮 Rock, Paper, Scissors <br>Game</a></h2>
-             <p>A fun and interactive implementation of the classic hand game, built using HTML, CSS, and JavaScript. This project demonstrates my skills in DOM manipulation, event handling, and responsive design while creating an engaging user experience.</p>
-             <ul>
-               <li><a href="10-Rock-paper-scissors(2).html"class=" btn btn-white">Preview</a></li>
-             </ul>
-           </div>
-         </div>
-         <!-- TASKHUB PROJECT-->
-         <div class="task-hub-project">
-           <div>
-             <img src="TaskHub-project.jpg" class="todo-project-image">
-           </div>
-           <div class="task-hub-project-content">
-             <h2><a href="TaskHub.html">TaskHub</a></h2>
-             <p>A simple task management app that allows users to add, edit, and delete tasks. Built using JavaScript, HTML, and CSS.</p>
-             <div class="key-features">
-               <h3>key features</h3>
-               <ul>
-                 <li>Add and remove tasks</li>
-                 <li>Mark tasks as completed</li>
-               </ul>
-             </div>
-             <div class="technologies-used">
-               <h3>Technologies Used</h3>
-               <ul>
-                 <li><img src="6.png">
-                 <li><img src="10.png"></li>
-                 <li><img src="12.png"></li></li>
-               </ul>
-             </div>
-             <div class="task-hub-role">
-               <h3>My role</h3>
-               <p>Sole developer, responsible for designing and building the app.</p>
-             </div>
-           </div>
-           <ul>
-               <li><a href="TaskHub.html"class=" btn btn-white">Preview</a></li>
-             </ul>
+         <h1>My projects</h1>
+         <div class="projects-section-container js-projects-section">
+           <!--Generated using JavaScripts-->
          </div>
       </section>
     </main>
     
-             <!--Footer -->
+             <!--FOOTER -->
     <footer class="footer">
       <div class="important-links">
          <h4 class="footer-headings">IMPORTANT <br> LINKS</h4>
@@ -180,49 +139,12 @@
         <p class="footer-info">Made with ❤️ by Justus Samuel</p>
         <p class="footer-info">Innovation begins where imagination meets execution.</p>
       </div>
-        
-        
     </footer>
-    
   </div>
   
   <div class="fixed-icon">
     <a href="contact.html"><img src="chat-icon.png" class="chat-icon"></a>
   </div>
-  
-  
-  <script>
-    function showSidebar(){
-      const sidebars = document.querySelector('.sidebar-menu');
-      sidebars.style.display = 'flex'
-    }
-
-    
-    
-    function hideSidebar(){
-      const hideSidebar = document.querySelector('.sidebar-menu');
-      hideSidebar.style.display = 'none'
-    }
-
-
-    let currentColor = JSON.parse(localStorage.getItem('color'))
-
-    
-    document.querySelector('.js-side-bar').style.backgroundColor = currentColor
-    
-    document.querySelector('.js-change-side-color').addEventListener('input', () => {
-       let colorPicker = document.querySelector('.js-change-side-color')
-       let colorPickerValue = colorPicker.value
-       
-       localStorage.setItem('color', JSON.stringify(colorPickerValue))
-       
-       document.querySelector('.js-side-bar').style.backgroundColor = colorPickerValue
-       
-    })
-
-    
-    
-    
-  </script>
+  <script src="Script.js"></script>
 </body>
 </html>
